@@ -249,7 +249,7 @@ class ContactController extends Controller
     {
 
         $validated = $request->validate([
-            'file'   => 'required|mimes:csv,txt|max:10',
+            'file'   => 'required|mimes:csv,txt|max:1024',
             
         ]);
 
